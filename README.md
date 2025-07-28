@@ -63,7 +63,7 @@ This extension is specifically optimized for Korean developers and Windows envir
 
 ## 📸 Screenshot
 
-![Claude Code Assistant Korean Interface](https://raw.githubusercontent.com/cosmowifi/claude-code-assistant-korean/main/screenshot_main.png)
+![Claude Code Assistant Korean Interface](https://raw.githubusercontent.com/cosmowifi/claude-code-assistant-korean/master/screenshot_main.png)
 
 ## 📋 Patch Notes
 
