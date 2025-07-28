@@ -1,0 +1,77 @@
+{
+  "name": "claude-code-assistant-korean-cosmowifi",
+  "displayName": "Claude Code Assistant Korean - COSMOWIFI",
+  "description": "Korean-optimized Claude Code assistant for enhanced productivity - Specialized extension for Korean developers with IME composition detection",
+  "version": "1.0.3",
+  "publisher": "cosmowifi",
+  "icon": "icon/icon.jpg",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "claude",
+    "ai",
+    "assistant",
+    "korean",
+    "productivity",
+    "code",
+    "chat"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "claude-korean.showInput",
+        "title": "Claude Code Assistant Korean 열기"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "claude-korean-assistant",
+          "name": "CLAUDE CODE ASSISTANT KOREAN - COSMOWIFI",
+          "type": "webview",
+          "icon": "$(terminal)",
+          "visibility": "visible",
+          "when": "true"
+        }
+      ]
+    },
+    "terminal": {
+      "profiles": [
+        {
+          "id": "claude-terminal",
+          "title": "Claude Terminal"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "18.x",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cosmowifi/claude-code-assistant-korean"
+  },
+  "homepage": "https://github.com/cosmowifi/claude-code-assistant-korean#readme",
+  "bugs": {
+    "url": "https://github.com/cosmowifi/claude-code-assistant-korean/issues"
+  },
+  "license": "MIT"
+}
